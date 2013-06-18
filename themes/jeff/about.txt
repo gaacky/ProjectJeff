@@ -1,0 +1,5 @@
+Theme name:    Jeff
+Description:   Themed by god.
+Author name:   Elliot Greenwood
+Author site:   http://elliotgreenwood.co.uk
+License:       http://licence.visualidiot.com

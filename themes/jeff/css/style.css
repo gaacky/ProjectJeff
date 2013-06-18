@@ -1,0 +1,357 @@
+/**
+ *
+ */
+
+h1 {
+	padding: 80px 0 40px;
+
+	font-size: 40px;
+	line-height: 48px;
+	color: #E74C3C;
+	text-shadow: 1px 1px 0px #C0392B, 2px 2px 0px #C0392B;
+    filter: dropshadow(color=#C0392B, offx=1, offy=1);
+}
+h1 a{
+	color: #E74C3C;
+}
+h1 a:hover{
+	color: #E74C3C;
+}
+	.search h1 {
+		padding: 60px 0;
+	}
+
+/* The slide-down panel at the very top of the page. Like literally. It's above the page, hidden. */
+.slidey {
+	overflow: hidden;
+	padding: 30px 0;
+
+	background: #f3f5f8;
+	border-bottom: 1px solid #e5e8ed;
+}
+	.js-enabled .slidey {
+		-webkit-transition: margin-top .2s;
+		-moz-transition: margin-top .2s;
+		transition: margin-top .2s;
+	}
+	.slidey b, .slidey label {
+		display: block;
+		font-weight: 500;
+		padding-bottom: 15px;
+
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.slidey form, .slidey aside {
+		float: left;
+		width: 50%;
+	}
+		.slidey form input {
+			padding: 20px;
+			width: 75%;
+		}
+	.slidey li {
+		list-style: none;
+	}
+		.slidey a {
+			display: block;
+			text-decoration: none;
+
+			color: #717985;
+		}
+			.slidey a:hover {
+				color: #414b59;
+			}
+		.slidey li span {
+			float: right;
+			opacity: .6;
+		}
+
+#top {
+	overflow: hidden;
+	padding: 20px 35px;
+	height:480px;
+	text-align: center;
+	display: block;
+}
+	#top a {
+		position: relative;
+		top: 184px;
+		font-size: 72px;
+		font-weight: 500;
+		text-decoration: none;
+		line-height: 72px;
+	}
+		#top #logo:hover, #main ul a:hover, #main ul .active a, .posts .items li:first-child h2 a:hover, p a:hover {
+			color: #27AE60;
+		}
+	#main ul {
+		list-style: none;
+		padding: 20px 0;
+		text-align: center;
+		font-size: 18px;
+		line-height: 24px;
+	}
+		#main ul li {
+			padding: 20px;
+			display: inline-block;
+			*display: inline;
+		}
+		#main ul a {
+			display: inline-block;
+			color: #2ECC71;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		#main ul img {
+			display: inline-block;
+			vertical-align: middle;
+
+			position: relative;
+			top: -2px;
+
+			width: 16px;
+			height: 16px;
+
+			opacity: .4;
+		}
+			#main ul a:hover img {
+				opacity: .7;
+			}
+			#main ul a.active img {
+				opacity: 1;
+			}
+
+/**
+ *   Index page listing, category listing, search page results
+ */
+ time, span.tag {
+	 color: #2C3E50;
+	 background: #d9dfe1;
+	 padding: 5px 5px 3px;
+	 border-radius: 3px;
+	 -webkit-border-radius: 3px;
+	 -moz-border-radius: 3px;
+ }
+ span.tag {
+	 margin: 0px 5px;
+ }
+.items {
+	list-style: none;
+	margin-bottom: 110px;
+}
+	.items > li {
+		padding: 0;
+
+		color: #97aec9;
+	}
+		.posts .items > li:first-child {
+			padding: 10px 0 80px;
+		}
+			.posts .items > li:first-child h2 a {
+				color: #2ECC71;
+			}
+	.items h1 {
+		padding: 0 0 8px;
+		text-align: center;
+	}
+		.items h1 a {
+			text-decoration: none;
+		}
+		.items p {
+			padding: 10px 10px 20px;
+		}
+	.items h2 {
+		font-size: 32px;
+		line-height: 41px;
+	}
+		.items h2 a {
+			display: block;
+			padding-bottom: 12px;
+			color:#F39C12;
+
+			text-decoration: none;
+		}
+			.items h2 a:hover {
+				color:#e18d05;
+			}
+	.items .content {
+		padding: 10px 0 0;
+	}
+		.items .content p {
+			padding-bottom: 15px;
+		}
+
+/**
+ *   Pagination
+ */
+.pagination {
+	overflow: hidden;
+	padding: 30px 0;
+	margin-bottom: 50px;
+
+	border-top: 1px solid rgba(22,36,54,.1);
+	border-bottom: 1px solid rgba(22,36,54,.1);
+}
+	.pagination:empty {
+		display: none;
+	}
+	.pagination a {
+		float: left;
+		text-decoration: none;
+
+		font-size: 13px;
+		font-weight: 500;
+
+		color: #6f7b8b;
+	}
+		.pagination a:hover {
+			color: #3c4857;
+		}
+	.pagination a.next {
+		float: right;
+	}
+
+/**
+ *   Give some extra space to single-page wrappers
+ */
+.content.wrap {
+	padding-bottom: 50px;
+}
+	.content.wrap ul, .content.wrap ol, .items li ul {
+		padding: 20px 30px;
+	}
+		.content.wrap ul ul, .content.wrap ol ol, .items li ul ul {
+			padding: 0 20px;
+		}
+
+/**
+ *   Footnotes and straplines
+ */
+.footnote, .commentlist time, .items footer {
+	display: block;
+	padding: 5px 0 15px;
+	position: absolute;
+	color: #98a2b1;
+	font-size: 14px;
+	font-style: italic;
+	text-align: right;
+	right:105%;
+	top:7px;
+	white-space: nowrap;
+}
+	.footnote {
+		padding: 20px 0 40px;
+		top:71px;
+	}
+
+/**
+ *   Comment form
+ */
+ul.commentlist {
+	margin-bottom: 40px;
+
+	list-style: none;
+	border-top: 1px solid rgba(22,36,54,.1);
+}
+	ul.commentlist .wrap {
+		position: relative;
+	}
+	ul.commentlist li {
+		padding: 40px 0;
+		border-bottom: 1px solid rgba(22,36,54,.1);
+	}
+		ul.commentlist time {
+			font-size: 13px;
+		}
+		ul.commentlist h2 {
+			font-size: 25px;
+			line-height: 33px;
+		}
+		ul.commentlist .counter {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			font-size: 25px;
+			font-weight: 300;
+			color: #cdd2da;
+		}
+
+#comment {
+	overflow: hidden;
+}
+	#comment label[for] {
+		display: none;
+	}
+	#comment p {
+		float: left;
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 10px;
+
+		text-indent: 0;
+	}
+		#comment p + p {
+			margin-right: 0;
+		}
+		#comment p.textarea {
+			float: none;
+			width: 100%;
+		}
+	#comment input, #comment textarea {
+		width: 100%;
+		padding: 10px 15px;
+
+		font-size: 15px;
+		font-weight: normal;
+
+		border: 1px solid rgba(22,36,54,.2);
+		border-radius: 4px;
+	}
+		#comment input:focus, #comment textarea:focus {
+			outline: none;
+			background: #f7f9fc;
+		}
+		#comment textarea {
+			min-height: 150px;
+			max-height: 800px;
+			resize: vertical;
+		}
+	#comment button {
+		display: inline-block;
+		padding: 9px 18px;
+
+		background: #2C3E50;
+		color: #F1C40E;
+
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+
+		font-size: 13px;
+		font-weight: 500;
+	}
+		#comment button:hover {
+			color:: #F39C12;
+		}
+
+/**
+ *   Footer
+ */
+#bottom {
+	padding: 30px 0 40px;
+}
+	#bottom ul {
+		float: right;
+		list-style: none;
+	}
+		#bottom li {
+			float: left;
+			padding-left: 35px;
+
+			font-size: 14px;
+		}
+		#bottom a {
+			text-decoration: none;
+		}
